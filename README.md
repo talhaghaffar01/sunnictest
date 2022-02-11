@@ -1,7 +1,7 @@
 # Coding Interview
 
 ## First part
-1. read in all 10:00 files, which do not end on "_summme"
+1. read in all 10:00 files, which do not end on "_summe"
 2. concatenate columns for "Enerparc" and "sunnic_extern"
 3. rename columns
    * timestamp column -> "dt_start"
