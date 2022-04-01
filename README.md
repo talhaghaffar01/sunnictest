@@ -1,4 +1,6 @@
 # Coding Interview
+Use the file transformation.py 
+
 
 ## First part
 1. read in all 10:00 files, which do not end on "_summe"
