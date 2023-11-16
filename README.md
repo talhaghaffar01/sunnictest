@@ -2,7 +2,11 @@
 Use the file transformation.py 
 
 # Python
-## First part
+## Class questions
+Have a look at `class_questions.py`
+
+## Coding Task
+### First part
 1. read in all 10:00 (*_1000\*) files from data/input/, which do not end on "_summe"
 2. concatenate data for "Enerparc" and "sunnic_extern" column-wise
 3. rename columns
@@ -12,10 +16,10 @@ Use the file transformation.py
 
 
 
+### Second part
 <details>
   <summary>Click to expand!</summary>
   
-## Second part
 This task shall be repeated every 30 minutes for new files.
 
 Change your code so that you can generalize the operation and the following steps can be done by the same code. 
