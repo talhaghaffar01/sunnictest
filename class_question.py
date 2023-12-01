@@ -41,4 +41,15 @@ print(f'{f3.var=}')
 
 Foo.var = 6
 
-print(f3.var)
+input()
+print(f'{f1.var=}')
+print(f'{f2.var=}')
+print(f'{f3.var=}')
+
+f3.var = Foo.var
+Foo.var = 7
+
+input()
+print(f'{f1.var=}')
+print(f'{f2.var=}')
+print(f'{f3.var=}')
