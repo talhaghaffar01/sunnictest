@@ -4,7 +4,6 @@
 ## Python
 
 ### Class questions
-Have a look at `class_questions.py`
 
 
 ### Coding Task
@@ -33,10 +32,6 @@ Change your code so that you can generalize the operation and the following step
 
 
 ### Code Smells
-Have a look at the code_smells.py. What would you improve?
 
 
 ## UML
-Draw a class diagram representing a car, wheels, seats, driver & passengers.
-
-You can use the white board or the provided car.puml
