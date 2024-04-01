@@ -29,9 +29,9 @@ def process_files(input_dir, output_dir):
         enerparc_df = pd.read_csv(enerparc_file, delimiter=';', usecols=lambda col: "Leistung" in col or "Datum" in col)
         sunnic_df = pd.read_csv(sunnic_file, delimiter=';', usecols=lambda col: "Leistung" in col or "Datum" in col)
 
-        # Rename columns as required
-        enerparc_df.rename(columns=lambda x: x.replace("Meteocontrol_PV_Leistung ", "").replace("Datum [Europe/Berlin]", "dt_start"), inplace=True)
-        sunnic_df.rename(columns=lambda x: x.replace("Meteocontrol_PV_Leistung ", "").replace("Datum [Europe/Berlin]", "dt_start"), inplace=True)
+        # Rename columns as required and remove "Leistung" prefix
+        enerparc_df.rename(columns=lambda x: x.replace("Leistung ", "").replace("Datum [Europe/Berlin]", "dt_start"), inplace=True)
+        sunnic_df.rename(columns=lambda x: x.replace("Leistung ", "").replace("Datum [Europe/Berlin]", "dt_start"), inplace=True)
 
         # Combine the dataframes column-wise
         combined_df = pd.concat([enerparc_df, sunnic_df.drop(columns="dt_start")], axis=1)
